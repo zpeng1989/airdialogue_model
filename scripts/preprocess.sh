@@ -85,7 +85,7 @@ else
   gen_voc_flag=""
 fi
 
-echo "tokenizing ${partition} data..."
+echo "Tokenlizing ${partition} data..."
 airdialogue prepro \
   --data_file "${json_path}/${partition}_data.json" \
   --kb_file "${json_path}/${partition}_kb.json" \
@@ -95,8 +95,8 @@ airdialogue prepro \
   $gen_voc_flag
 
 if [[ $partition = "train" ]]; then
-  # tokenizing context
-  echo "tokenizing selfplay train data"
+  # tokenlizing context
+  echo "Tokenlizing selfplay train data"
   airdialogue prepro \
     --data_file "${json_path}/selfplay_train_data.json" \
     --kb_file "${json_path}/selfplay_train_kb.json" \
@@ -107,9 +107,9 @@ fi
 # If we choose OOD mode we will generate the testing sets for self-play.
 # generating test context for OOD
 
-# tokenizing context for OOD1
+# tokenlizing context for OOD1
 for i in "${ADDS[@]}"; do
-  echo "tokenizing self-play evaluation on $i"
+  echo "Tokenlizing self-play evaluation on $i"
   airdialogue prepro \
     --data_file "${json_path}/${i}_data.json" \
     --kb_file "${json_path}/${i}_kb.json" \

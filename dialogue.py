@@ -14,11 +14,11 @@
 
 """The conversation module used for self play."""
 
-from airdialogue_model.__future__ import print_function
-from airdialogue_model import math
-from airdialogue_model import sys
-from airdialogue_model import numpy as np
-from airdialogue_model import tensorflow as tf
+from __future__ import print_function
+import math
+import sys
+import numpy as np
+import tensorflow as tf
 from utils import dialogue_utils
 from utils import misc_utils as utils
 

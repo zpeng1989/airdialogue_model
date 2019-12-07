@@ -13,17 +13,17 @@
 # limitations under the License.
 
 """procedures to build graph."""
-from airdialogue_model.__future__ import absolute_import
-from airdialogue_model.__future__ import division
-from airdialogue_model.__future__ import print_function
-from airdialogue_model import tensorflow as tf
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+import tensorflow as tf
 import model_helper
 from rnn_decoder import basic_decoder
 from rnn_decoder import helper as help_py
 from utils import dialogue_utils
 from utils import misc_utils as utils
 from utils import vocab_utils
-from airdialogue_model.google3.third_party.tensorflow.python.layers import core as layers_core
+from google3.third_party.tensorflow.python.layers import core as layers_core
 
 
 def _build_encoder_cell(model,

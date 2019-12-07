@@ -13,17 +13,17 @@
 # limitations under the License.
 
 """Generally useful utility functions."""
-from airdialogue_model.__future__ import print_function
+from __future__ import print_function
 
-from airdialogue_model import codecs
-from airdialogue_model import collections
-from airdialogue_model import json
-from airdialogue_model import math
-from airdialogue_model import os
-from airdialogue_model import sys
-from airdialogue_model import time
+import codecs
+import collections
+import json
+import math
+import os
+import sys
+import time
 
-from airdialogue_model import tensorflow as tf
+import tensorflow as tf
 
 
 def safe_exp(value):

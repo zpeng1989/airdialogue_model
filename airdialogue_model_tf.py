@@ -14,14 +14,14 @@
 
 """This file is the main entry for the airdialogue model."""
 
-from airdialogue_model.__future__ import print_function
-from airdialogue_model import argparse
-from airdialogue_model.functools import partial
-from airdialogue_model import os
-from airdialogue_model import random
-from airdialogue_model import sys
-from airdialogue_model import numpy as np
-from airdialogue_model import tensorflow as tf
+from __future__ import print_function
+import argparse
+from functools import partial
+import os
+import random
+import sys
+import numpy as np
+import tensorflow as tf
 import inference
 import self_play
 import train
@@ -651,13 +651,12 @@ def process_input_path(hparams):
           hparams.input_dir, hparams.eval_prefix + ".infer.tar.data")
       hparams.infer_kb = os.path.join(hparams.input_dir,
                                       hparams.eval_prefix + ".infer.kb")
-    if hparams.task_type in [task_SP_EVAL]:
-        if not (hparams.self_play_eval_data and hparams.self_play_eval_kb):
-            assert hparams.input_dir
-            hparams.self_play_eval_data = os.path.join(
-                hparams.input_dir, hparams.eval_prefix + ".selfplay.eval.data")
-            hparams.self_play_eval_kb = os.path.join(
-                hparams.input_dir, hparams.eval_prefix + ".selfplay.eval.kb")
+    if not (hparams.self_play_eval_data and hparams.self_play_eval_kb):
+      assert hparams.input_dir
+      hparams.self_play_eval_data = os.path.join(
+          hparams.input_dir, hparams.eval_prefix + ".selfplay.eval.data")
+      hparams.self_play_eval_kb = os.path.join(
+          hparams.input_dir, hparams.eval_prefix + ".selfplay.eval.kb")
   if hparams.task_type == task_INFER and (not hparams.inference_output_file):
     hparams.inference_output_file = os.path.join(hparams.out_dir,
                                                  "inference_out.txt")

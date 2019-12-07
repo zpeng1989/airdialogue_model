@@ -13,16 +13,16 @@
 # limitations under the License.
 
 """Main module for the dialogue generation model."""
-from airdialogue_model.__future__ import absolute_import
-from airdialogue_model.__future__ import division
-from airdialogue_model.__future__ import print_function
-from airdialogue_model import tensorflow as tf
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
+import tensorflow as tf
 import model_helper
 from build_graph import build_graph
 from utils import dialogue_utils
 from utils import iterator_utils
 from utils import misc_utils as utils
-from airdialogue_model.google3.third_party.tensorflow.python.layers import core as layers_core
+from google3.third_party.tensorflow.python.layers import core as layers_core
 
 
 class Model(object):

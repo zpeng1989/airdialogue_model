@@ -14,14 +14,14 @@
 
 """Utility to handle vocabularies."""
 
-from airdialogue_model.__future__ import absolute_import
-from airdialogue_model.__future__ import division
-from airdialogue_model.__future__ import print_function
+from __future__ import absolute_import
+from __future__ import division
+from __future__ import print_function
 
-from airdialogue_model import codecs
-from airdialogue_model import tensorflow as tf
+import codecs
+import tensorflow as tf
 
-from airdialogue_model.google3.third_party.tensorflow.python.ops import lookup_ops
+from google3.third_party.tensorflow.python.ops import lookup_ops
 
 UNK = "<unk>"
 UNK_ID = 0

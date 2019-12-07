@@ -14,18 +14,18 @@
 
 """Utility functions for building models."""
 
-from airdialogue_model.__future__ import print_function
-from airdialogue_model import collections
-from airdialogue_model import logging
-from airdialogue_model import re
-from airdialogue_model import time
-from airdialogue_model import tensorflow as tf
+from __future__ import print_function
+import collections
+import logging
+import re
+import time
+import tensorflow as tf
 from rnn_decoder.multi_rnn import MultiRNNCell
 from utils import dialogue_utils
 from utils import iterator_utils
 from utils import misc_utils as utils
 from utils import vocab_utils
-from airdialogue_model.google3.third_party.tensorflow.python.ops import lookup_ops
+from google3.third_party.tensorflow.python.ops import lookup_ops
 
 
 def get_initializer(init_op, seed=None, init_weight=None):
