@@ -111,6 +111,7 @@ def single_worker_selfplay(mutable_model, immutable_model, mutable_sess,
   start_time = time.time()
   num_flips_for_initial_speaker = 2
   with tf.gfile.GFile(hparams.selfplay_eval_output_file, 'w') as selfplay_out:
+    print ('flip 1')
     for flip in range(num_flips_for_initial_speaker):
       # epoch = -1
       i = len(selfplay_data)  # force shuffling at the beginning
@@ -150,6 +151,7 @@ def single_worker_selfplay(mutable_model, immutable_model, mutable_sess,
   handle_summary(dialogue_mode, summary_writer, global_step, all_summary,
                  summary_weight)
   end_time = time.time()
+  print ('finished')
   utils.add_summary(summary_writer, global_step, dialogue_mode + '_time',
                     end_time - start_time)  #  step wise summary
 
@@ -249,6 +251,7 @@ def self_play_eval_fn(hparams,
       # if eval_forever is disabled, we will do one selfplay evalation
       # otherwise, we will wait until certain number of timesteps are elapsed.
       last_external_eval_step = global_step
+      print ('do single worker evaluation')
       single_worker_selfplay(mutable_model, immutable_model, mutable_sess,
                              immutable_sess, hparams.self_play_eval_data,
                              hparams.self_play_eval_kb, global_step, hparams,

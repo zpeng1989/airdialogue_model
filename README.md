@@ -69,7 +69,6 @@ We are currently working on the scoring script.
 ```
 airdialogue score --pred_data ./data/out_dir/dev_inference_out.txt \
                   --true_data ./data/airdialogue/tokenized/dev.infer.tar.data \
-                  --true_kb ./data/airdialogue/tokenized/dev.infer.kb \
                   --task infer \
                   --output ./data/out_dir/dev_bleu.json
 ```
