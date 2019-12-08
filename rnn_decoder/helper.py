@@ -13,22 +13,22 @@
 # limitations under the License.
 
 """this file contains helper."""
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
+from airdialogue_model.__future__ import absolute_import
+from airdialogue_model.__future__ import division
+from airdialogue_model.__future__ import print_function
 
-import abc
+from airdialogue_model import abc
 
-import six
+from airdialogue_model import six
 
-from tensorflow.contrib.seq2seq.python.ops import decoder
-from tensorflow.python.framework import dtypes
-from tensorflow.python.framework import ops
-from tensorflow.python.ops import array_ops
-from tensorflow.python.ops import control_flow_ops
-from tensorflow.python.ops import math_ops
-from tensorflow.python.ops import tensor_array_ops
-from tensorflow.python.util import nest
+from airdialogue_model.google3.third_party.tensorflow.contrib.seq2seq.python.ops import decoder
+from airdialogue_model.google3.third_party.tensorflow.python.framework import dtypes
+from airdialogue_model.google3.third_party.tensorflow.python.framework import ops
+from airdialogue_model.google3.third_party.tensorflow.python.ops import array_ops
+from airdialogue_model.google3.third_party.tensorflow.python.ops import control_flow_ops
+from airdialogue_model.google3.third_party.tensorflow.python.ops import math_ops
+from airdialogue_model.google3.third_party.tensorflow.python.ops import tensor_array_ops
+from airdialogue_model.google3.third_party.tensorflow.python.util import nest
 
 
 _transpose_batch_time = decoder._transpose_batch_time  # pylint: disable=protected-access

@@ -13,22 +13,22 @@
 # limitations under the License.
 
 """This module contains a modified version of tensorflow basic decoder for AirDialogue."""
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
+from airdialogue_model.__future__ import absolute_import
+from airdialogue_model.__future__ import division
+from airdialogue_model.__future__ import print_function
 
-import collections
+from airdialogue_model import collections
 
-import tensorflow as tf
+from airdialogue_model import tensorflow as tf
 
-from tensorflow.contrib.seq2seq.python.ops import decoder
+from airdialogue_model.google3.third_party.tensorflow.contrib.seq2seq.python.ops import decoder
 
-from tensorflow.python.framework import dtypes
-from tensorflow.python.framework import ops
-from tensorflow.python.framework import tensor_shape
-from tensorflow.python.layers import base as layers_base
-from tensorflow.python.ops import rnn_cell_impl
-from tensorflow.python.util import nest
+from airdialogue_model.google3.third_party.tensorflow.python.framework import dtypes
+from airdialogue_model.google3.third_party.tensorflow.python.framework import ops
+from airdialogue_model.google3.third_party.tensorflow.python.framework import tensor_shape
+from airdialogue_model.google3.third_party.tensorflow.python.layers import base as layers_base
+from airdialogue_model.google3.third_party.tensorflow.python.ops import rnn_cell_impl
+from airdialogue_model.google3.third_party.tensorflow.python.util import nest
 
 from rnn_decoder import helper as helper_py
 

@@ -13,11 +13,11 @@
 # limitations under the License.
 
 """train the dialogue model."""
-from __future__ import print_function
-import math
-import os
-import time
-import tensorflow as tf
+from airdialogue_model.__future__ import print_function
+from airdialogue_model import math
+from airdialogue_model import os
+from airdialogue_model import time
+from airdialogue_model import tensorflow as tf
 import model as diag_model
 import model_helper
 from utils import misc_utils as utils

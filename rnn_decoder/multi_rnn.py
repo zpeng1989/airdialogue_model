@@ -14,14 +14,14 @@
 
 """this class is changed so that outputs of all LSTM layers are recorded not just the last one."""
 
-from __future__ import absolute_import
-from __future__ import division
-from __future__ import print_function
-from tensorflow.python.framework import ops
-from tensorflow.python.ops import array_ops
-from tensorflow.python.ops import variable_scope as vs
-from tensorflow.python.ops.rnn_cell_impl import RNNCell
-from tensorflow.python.util import nest
+from airdialogue_model.__future__ import absolute_import
+from airdialogue_model.__future__ import division
+from airdialogue_model.__future__ import print_function
+from airdialogue_model.google3.third_party.tensorflow.python.framework import ops
+from airdialogue_model.google3.third_party.tensorflow.python.ops import array_ops
+from airdialogue_model.google3.third_party.tensorflow.python.ops import variable_scope as vs
+from airdialogue_model.google3.third_party.tensorflow.python.ops.rnn_cell_impl import RNNCell
+from airdialogue_model.google3.third_party.tensorflow.python.util import nest
 
 
 class MultiRNNCell(RNNCell):

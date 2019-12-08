@@ -13,10 +13,10 @@
 # limitations under the License.
 
 """Predict the next sentence given a partial human dialogue."""
-from __future__ import print_function
-import os
-import time
-import tensorflow as tf
+from airdialogue_model.__future__ import print_function
+from airdialogue_model import os
+from airdialogue_model import time
+from airdialogue_model import tensorflow as tf
 import model as diag_model
 import model_helper
 from utils import dialogue_utils

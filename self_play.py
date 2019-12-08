@@ -13,16 +13,16 @@
 # limitations under the License.
 
 """To perform inference on test set given a trained model."""
-from __future__ import print_function
-import copy
-import os
-import random
-import time
-import json
-from tqdm import tqdm
-import math
-import numpy as np
-import tensorflow as tf
+from airdialogue_model.__future__ import print_function
+from airdialogue_model import copy
+from airdialogue_model import os
+from airdialogue_model import random
+from airdialogue_model import time
+from airdialogue_model import json
+from airdialogue_model.tqdm import tqdm
+from airdialogue_model import math
+from airdialogue_model import numpy as np
+from airdialogue_model import tensorflow as tf
 import model as diag_model
 import model_helper
 from dialogue import SelfplayDialogue
