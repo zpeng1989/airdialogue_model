@@ -19,7 +19,7 @@ from __future__ import print_function
 
 import collections
 
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from google3.third_party.tensorflow.contrib.seq2seq.python.ops import decoder
 

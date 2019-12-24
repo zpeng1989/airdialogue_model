@@ -19,7 +19,7 @@ from __future__ import division
 from __future__ import print_function
 
 import codecs
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 
 from google3.third_party.tensorflow.python.ops import lookup_ops
 

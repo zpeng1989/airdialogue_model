@@ -18,7 +18,7 @@ from __future__ import print_function
 import math
 import sys
 import numpy as np
-import tensorflow as tf
+import tensorflow.compat.v1 as tf
 from utils import dialogue_utils
 from utils import misc_utils as utils
 
